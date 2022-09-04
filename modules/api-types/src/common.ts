@@ -88,6 +88,12 @@ export enum ChannelFlags {
     RequireTag = 1 << 4,
 }
 
+/** https://discord.com/developers/docs/resources/guild#integration-object-integration-expire-behaviors */
+export enum IntegrationExpireBehaviors {
+	RemoveRole,
+	Kick,
+}
+
 /** https://discord.com/developers/docs/resources/user#connection-object-visibility-types */
 export enum VisibilityTypes {
 	/** Invisible to everyone except the user themselves */
