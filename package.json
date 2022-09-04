@@ -1,0 +1,56 @@
+{
+    "name": "@muffin/discord",
+    "version": "0.1.0",
+    "description": "A simple yet powerful library for interacting with the Discord API.",
+    "private": true,
+    "scripts": {
+        "dev": "turbo run dev --parallet",
+        "build": "turbo run build",
+        "clean": "turbo run clean",
+        "fmt": "turbo run format --parallel",
+        "lint": "prettier --write . && eslint --fix --ext mjs,ts {modules}/**/*.ts",
+        "test:lint": "prettier --check . && eslint --ext mjs,ts {modules}/**/*.ts",
+        "pretest:types": "tsc"
+    },
+    "workspaces": [
+        "modules/*"
+    ],
+    "engines": {
+        "node": ">=14.0.0"
+    },
+    "keywords": [
+        "discord api",
+        "discord",
+        "discord bots",
+        "typescript"
+    ],
+    "license": "MIT",
+    "author": "Lemon Rose <japandotorg@pm.me>",
+    "contributors": [
+        {
+            "name": "Lemon Rose",
+            "url": "https://github.com/japandotorg",
+            "author": true
+        }
+    ],
+    "homepage": "https://github.com/japandotorg/muffin",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/japandotorg/muffin.git"
+    },
+    "packageManager": "yarn@3.2.1",
+    "devDependencies": {
+        "@types/node": "^18.6.3",
+		"@typescript-eslint/eslint-plugin": "^5.32.0",
+		"@typescript-eslint/parser": "^5.32.0",
+		"eslint": "^8.21.0",
+		"eslint-config-prettier": "^8.5.0",
+		"turbo": "^1.4.2",
+		"typescript": "^4.7.4",
+		"@changesets/cli": "^2.24.1",
+        "prettier": "^2.6.2"
+    },
+    "resolutions": {
+		"@microsoft/tsdoc-config": "patch:@microsoft/tsdoc-config@npm:0.16.1#.yarn/patches/@microsoft-tsdoc-config-npm-0.16.1-81031b1bbf.patch"
+	}
+}
